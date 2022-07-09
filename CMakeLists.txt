@@ -32,13 +32,13 @@ configure_file (
 find_package(Threads)
 
 # C definitions
-# Do not use -march=native or -mtune=native when compiling for multible CPUs.
+# Do not use -march=native or -mtune=native when compiling for multiple CPUs.
 add_definitions(#-std=c11
         -Wall
         -Wextra
         -D_FILE_OFFSET_BITS=64
         -D_LARGEFILE64_SOURCE
-        -march=native
+        -mcpu=apple-m1
         -mtune=native
         -pipe
         -O2
