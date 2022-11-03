@@ -80,7 +80,7 @@ static void setWordList(FILE *file, const char *wl) {
     wlMore = true;
 }
 
-static const uint8_t stdchars[63] = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"};
+static const uint8_t stdchars[95] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
 
 static const uint8_t *charset;
 static unsigned int charsetLen;

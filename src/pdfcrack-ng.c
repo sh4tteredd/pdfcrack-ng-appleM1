@@ -132,7 +132,7 @@ bool printProgress(void) {
     asprintf(&currentOutput, " [%c] Threads: %i/%d. Avg.: %0.f w/s. Current: \"%s\"", processRotationSymbol()[0],
              nrOfThreads, numCpuCorez, nrprocessed / difftime(currentTime, startTime), str);
     lastOutputLength = sizeof(currentOutput);
-    printf(currentOutput);
+    printf("%s", currentOutput);
     free(currentOutput);
     fflush(stdout);
     nrprocessed = 0;
